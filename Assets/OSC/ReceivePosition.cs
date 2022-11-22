@@ -8,7 +8,8 @@ public class ReceivePosition : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	   osc.SetAddressHandler( "/CubeXYZ" , OnReceiveXYZ );
+        osc.SetAddressHandler("/CubeXYZ", OnReceiveXYZ);
+        osc.SetAddressHandler( "/CubeXYZ" , OnReceiveXYZ );
        osc.SetAddressHandler("/CubeX", OnReceiveX);
        osc.SetAddressHandler("/CubeY", OnReceiveY);
        osc.SetAddressHandler("/CubeZ", OnReceiveZ);

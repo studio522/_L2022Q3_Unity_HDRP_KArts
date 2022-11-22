@@ -5,19 +5,23 @@ using UnityEngine;
 public class Intensity_Controller : MonoBehaviour
 {
     public Material Mat;
-    Material CubeMaterial;
-    Shader CubeShader;
     float intensity;
     Color EmissiveColor;
+    public OSC osc;
+    public string OSCAddr = "/example/7/";
+
     void Start()
     {
-        CubeShader = Shader.Find("HDRP/Lit");
         EmissiveColor = Mat.GetColor("_EmissiveColor");
+        osc.SetAddressHandler(OSCAddr, OnReceiveCube);
     }
 
-    // Update is called once per frame
+
     void Update()
     {
+        ////////////////////////////////////////
+        /// Test
+        ////////////////////////////////////////
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             intensity = 0.0f;
@@ -36,9 +40,15 @@ public class Intensity_Controller : MonoBehaviour
     void setIntensity(float intensity)
     {
         Mat.SetFloat("_EmissiveIntensity", intensity);
-        //float emissiveIntensity = 10;
         Color emissiveColor = EmissiveColor;
         Mat.SetColor("_EmissiveColor", emissiveColor * intensity);
-        //m_EmissiveObject.GetComponent<Renderer>().material.SetColor("_EmissiveColor", emissiveColor * emissiveIntensity);
     }
+
+    void OnReceiveCube(OscMessage message)
+    {
+        float intensity = message.GetFloat(0);
+        print("OSC In:" + intensity);
+        setIntensity(intensity);
+    }
+
 }

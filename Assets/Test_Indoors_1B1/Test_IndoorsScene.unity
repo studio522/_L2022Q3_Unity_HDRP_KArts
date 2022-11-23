@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mat: {fileID: 2100000, guid: f78b0d4771608ed42bcabf04ca5c66af, type: 2}
-  osc: {fileID: 0}
+  osc: {fileID: 1864442807}
   OSCAddr: /example/7/
 --- !u!4 &781839557
 Transform:

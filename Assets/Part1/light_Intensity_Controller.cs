@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Intensity_Controller : MonoBehaviour
+public class light_Intensity_Controller : MonoBehaviour
 {
     public Material Mat;
     float intensity;
@@ -24,7 +24,7 @@ public class Intensity_Controller : MonoBehaviour
         ////////////////////////////////////////
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            intensity = 0.0f;
+            intensity = 0.01f;
             print(intensity);
             setIntensity(intensity);
         }

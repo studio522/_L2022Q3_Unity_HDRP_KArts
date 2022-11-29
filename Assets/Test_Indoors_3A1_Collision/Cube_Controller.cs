@@ -49,8 +49,13 @@ public class Cube_Controller : MonoBehaviour
             }
         }
 
-        // Camera fade out (color - "osc" -> gray scale -"osc"-> color -"osc"-> fade out)
-        // OSC for Cam "/cam/gray", "/cam/color/", "/cam/fo"
+        // Part2
+        // Camera fade out (color - "osc" -> gray scale -"osc"-> color)
+        // OSC for Cam "/cam/gray", "/cam/color/"
+
+        // Part3
+        // Camera fade out (color -"osc"-> black out)
+        // OSC for Cam "/cam/blackout"
     }
 
     void SetIntensity(float intensity)

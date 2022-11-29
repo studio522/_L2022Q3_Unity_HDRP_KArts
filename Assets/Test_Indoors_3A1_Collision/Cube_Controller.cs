@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Cube_Controller : MonoBehaviour
 {
+    // use OSC
     public FloatingObjectsContainer_Controller ContainerScript;
 
     Material LightMat;
@@ -28,21 +29,28 @@ public class Cube_Controller : MonoBehaviour
         timer += Time.deltaTime;
         intensity += Time.deltaTime;
         timeLimit += Time.deltaTime;
+        // OSC "/light/create/" + none (int)
         if (timer > interval)
         {
-            ContainerScript.ActivateChild();
+            ContainerScript.ActivateChild(); 
             timer = 0;
         }
 
-        intensity = Mathf.Clamp(intensity, 0f, 200f);
-        SetIntensity(Mathf.Pow(intensity, 2));
-        if(timeLimit > interval * 10)
+        // OSC "/light/cube/" + float
+        intensity = Mathf.Clamp(intensity, 0f, 200f);  
+        SetIntensity(Mathf.Pow(intensity, 2)); // <-- OSC float value
+
+        // OSC "/light/wall/" + int (0~9)
+        if (timeLimit > interval * 10)
         {
            foreach(Transform Child in ContainerScript.transform)
             {
                 Child.GetComponent<FloatingObjects_Controller>().isClingToTheWall = true;
             }
         }
+
+        // Camera fade out (color - "osc" -> gray scale -"osc"-> color -"osc"-> fade out)
+        // OSC for Cam "/cam/gray", "/cam/color/", "/cam/fo"
     }
 
     void SetIntensity(float intensity)

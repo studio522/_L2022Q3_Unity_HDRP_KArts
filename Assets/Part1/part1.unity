@@ -1907,7 +1907,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Intensity: 9000
   m_EnableSpotReflector: 1
+<<<<<<< Updated upstream
   m_LuxAtDistance: 0.01
+=======
+  m_LuxAtDistance: 1.78
+>>>>>>> Stashed changes
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
@@ -2027,7 +2031,11 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
   m_Intensity: 0.9
+=======
+  m_Intensity: 415288.5
+>>>>>>> Stashed changes
   m_Range: 14.7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2385,7 +2393,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Intensity: 9000
   m_EnableSpotReflector: 1
+<<<<<<< Updated upstream
   m_LuxAtDistance: 0.01
+=======
+  m_LuxAtDistance: 1.78
+>>>>>>> Stashed changes
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
@@ -2505,7 +2517,11 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
   m_Intensity: 0.9
+=======
+  m_Intensity: 415288.5
+>>>>>>> Stashed changes
   m_Range: 14.43
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2603,9 +2619,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 3183.0989
+  m_Intensity: 90000
   m_EnableSpotReflector: 1
-  m_LuxAtDistance: 4.78
+  m_LuxAtDistance: 0.76
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
@@ -2618,7 +2634,7 @@ MonoBehaviour:
   m_NonLightmappedOnly: 0
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
-  m_AspectRatio: 10.62
+  m_AspectRatio: 20
   m_ShapeRadius: 0
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
@@ -2725,7 +2741,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 72728.73
+  m_Intensity: 51984
   m_Range: 25
   m_SpotAngle: 1
   m_InnerSpotAngle: 1
@@ -2739,7 +2755,7 @@ Light:
     m_NormalBias: 0.4
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
-      e00: 10.789891
+      e00: 5.729432
       e01: 0
       e02: 0
       e03: 0
@@ -4533,7 +4549,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Intensity: 9000
   m_EnableSpotReflector: 1
+<<<<<<< Updated upstream
   m_LuxAtDistance: 0.01
+=======
+  m_LuxAtDistance: 1.78
+>>>>>>> Stashed changes
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
@@ -4653,7 +4673,11 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
   m_Intensity: 0.9
+=======
+  m_Intensity: 415288.5
+>>>>>>> Stashed changes
   m_Range: 14.43
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4879,7 +4903,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Intensity: 9000
   m_EnableSpotReflector: 1
+<<<<<<< Updated upstream
   m_LuxAtDistance: 0.01
+=======
+  m_LuxAtDistance: 1.78
+>>>>>>> Stashed changes
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
@@ -4999,7 +5027,11 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
   m_Intensity: 0.9
+=======
+  m_Intensity: 415288.5
+>>>>>>> Stashed changes
   m_Range: 14.43
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

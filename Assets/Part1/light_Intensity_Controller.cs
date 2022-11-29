@@ -42,7 +42,11 @@ public class light_Intensity_Controller : MonoBehaviour
         Mat.SetFloat("_EmissiveIntensity", intensity);
         Color MinColor = new Color(0.1f, 0.1f, 0.1f, 0.1f);
         Color emissiveColor = EmissiveColor + MinColor;
+<<<<<<< Updated upstream
         Mat.SetColor("_EmissiveColor", EmissiveColor * intensity);
+=======
+        Mat.SetColor("_EmissiveColor", emissiveColor * intensity);
+>>>>>>> Stashed changes
     }
 
     void OnReceiveCube(OscMessage message)

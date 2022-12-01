@@ -40,8 +40,9 @@ public class light_Intensity_Controller : MonoBehaviour
     void setIntensity(float intensity)
     {
         Mat.SetFloat("_EmissiveIntensity", intensity);
-        Color MinColor = new Color(0.1f, 0.1f, 0.1f, 0.1f);
+        Color MinColor = new Color(0.1f, 0.1f, 0.1f);
         Color emissiveColor = EmissiveColor + MinColor;
+        Mat.SetColor("_EmissiveColor", emissiveColor * intensity);
         Mat.SetColor("_EmissiveColor", EmissiveColor * intensity);
     }
 
@@ -53,3 +54,5 @@ public class light_Intensity_Controller : MonoBehaviour
     }
 
 }
+
+

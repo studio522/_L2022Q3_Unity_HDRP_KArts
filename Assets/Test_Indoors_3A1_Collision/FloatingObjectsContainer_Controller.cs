@@ -30,6 +30,6 @@ public class FloatingObjectsContainer_Controller : MonoBehaviour
         {
             transform.GetChild(childIndex).gameObject.SetActive(true);
             childIndex++;
-        }
+        }         
     }
 }

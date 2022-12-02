@@ -1219,6 +1219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 792577365}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2
@@ -1527,6 +1528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 578355758}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2
@@ -2253,6 +2255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 1732583086}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2
@@ -4078,7 +4081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &991343060
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4169,7 +4172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83346de8cb2a29f42949e671bd6456ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ContainerScript: {fileID: 2072371772}
+  osc: {fileID: 1489416117}
   intensity: 0
 --- !u!1 &1001918342
 GameObject:
@@ -4683,6 +4686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 1808505999}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2
@@ -5184,6 +5188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 1623334808}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2
@@ -5363,6 +5368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 205117446}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2
@@ -7151,6 +7157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 448428083}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2
@@ -7721,7 +7728,7 @@ GameObject:
   - component: {fileID: 2060801830}
   - component: {fileID: 2060801829}
   m_Layer: 0
-  m_Name: roof
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7883,6 +7890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 757347528}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2
@@ -7941,6 +7949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5101effc6965a9f428b410fb2d63f6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
 --- !u!1 &2105673319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8102,6 +8111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac55c66b28583842b15f36da330ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 0}
   Destination: {fileID: 692102606}
   bounceSpeed_object: 2
   bounceSpeed_wall: 2

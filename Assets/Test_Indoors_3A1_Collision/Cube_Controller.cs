@@ -5,7 +5,8 @@ using UnityEngine;
 public class Cube_Controller : MonoBehaviour
 {
     // use OSC
-    public FloatingObjectsContainer_Controller ContainerScript;
+    public OSC osc;
+    //public FloatingObjectsContainer_Controller ContainerScript;
 
     Material LightMat;
     Color EmissiveColor;
@@ -21,11 +22,14 @@ public class Cube_Controller : MonoBehaviour
     {
         LightMat = GetComponent<Renderer>().material;
         EmissiveColor = new Color(1f, 0.9358803f, 0f, 1f);
+
+        osc.SetAddressHandler("/light/cube/", OnReceiveSetCubeIntensity);
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         timer += Time.deltaTime;
         intensity += Time.deltaTime;
         timeLimit += Time.deltaTime;
@@ -35,7 +39,9 @@ public class Cube_Controller : MonoBehaviour
             ContainerScript.ActivateChild(); 
             timer = 0;
         }
+        */
 
+        /*
         // OSC "/light/cube/" + float
         intensity = Mathf.Clamp(intensity, 0f, 200f);  
         SetIntensity(Mathf.Pow(intensity, 2)); // <-- OSC float value
@@ -48,6 +54,8 @@ public class Cube_Controller : MonoBehaviour
                 Child.GetComponent<FloatingObjects_Controller>().isClingToTheWall = true;
             }
         }
+        */
+
 
         // Part2
         // Camera fade out (color - "osc" -> gray scale -"osc"-> color)
@@ -58,10 +66,17 @@ public class Cube_Controller : MonoBehaviour
         // OSC for Cam "/cam/blackout"
     }
 
+    public void OnReceiveSetCubeIntensity(OscMessage message)
+    {
+        float intensity = message.GetFloat(0);
+        SetIntensity(intensity);
+    }
+
     void SetIntensity(float intensity)
     {
         LightMat.SetFloat("_EmissiveIntensity", intensity);
         LightMat.SetColor("_EmissiveColor", EmissiveColor * intensity);
         print(intensity);
     }
+    
 }

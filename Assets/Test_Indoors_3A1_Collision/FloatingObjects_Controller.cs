@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FloatingObjects_Controller : MonoBehaviour
 {
+    public OSC osc;
+
     public Transform Destination;
     Vector3 OriginalPos;
     Vector3 CenterPos;
